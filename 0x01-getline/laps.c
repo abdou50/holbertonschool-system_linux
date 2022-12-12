@@ -30,13 +30,13 @@ void doublesort(int *cars, int *laps, int index)
 */
 void race_state(int *id, size_t size)
 {
-    static int cars[100];    
-    static int laps[100];
+	static int cars[100];    
+	static int laps[100];
 	static size_t index;
 	int found;
 	size_t i, j;
 
-	if (size == NULL)
+	if (!size)
 		return;
 	for (i = 0; i < size; i++)
 	{
