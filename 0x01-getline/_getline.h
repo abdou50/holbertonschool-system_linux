@@ -1,7 +1,7 @@
 #ifndef lap
 #define lap
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 #include <math.h>
 typedef struct reader_s
 {
