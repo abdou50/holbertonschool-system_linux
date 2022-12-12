@@ -1,10 +1,15 @@
 #include "laps.h"
-/*
+/**
+* doublesort - sorting the array of cars and her matching in the laps array.
+* @cars: array of call cars
+* @laps: array of laps matching with the cars
+* @index: size of the array
 */
 void doublesort(int *cars, int *laps, int index)
 {
 	int aux;
 	int i;
+
 	for (i = index; i > 0; i--)
 	{
 		if (cars[i] < cars[i - 1])
@@ -18,13 +23,19 @@ void doublesort(int *cars, int *laps, int index)
 		}
 	}
 }
+/**
+* race_state - sort cars.
+* @id: the identifier of the cars
+* @size: the size of the array
+*/
 void race_state(int *id, size_t size)
 {
     int cars[100];    
     int laps[100];
-	static size_t index = 0;
+	static size_t index;
 	int found;
 	size_t i, j;
+
 	if (!size)
 		return;
 	for (i = 0; i < size; i++)
