@@ -30,13 +30,13 @@ void doublesort(int *cars, int *laps, int index)
 */
 void race_state(int *id, size_t size)
 {
-    int cars[100];    
-    int laps[100];
+    static int cars[100];    
+    static int laps[100];
 	static size_t index;
 	int found;
 	size_t i, j;
 
-	if (!size)
+	if (size == NULL)
 		return;
 	for (i = 0; i < size; i++)
 	{
@@ -54,8 +54,8 @@ void race_state(int *id, size_t size)
 
 			cars[index] = id[i];
 			doublesort(cars, laps, index);
-            index++;
-            printf("Car %d joined the race\n", id[i]);
+			index++;
+			printf("Car %d joined the race\n", id[i]);
 		}
 	}
 	printf("Race state:\n");
