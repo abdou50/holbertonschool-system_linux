@@ -8,12 +8,15 @@ Where:
 - PID is the pid of the target process
 - search_string is the ASCII string you are looking to overwrite
 - replace_by_string is the ASCII string you want to replace
-  search_string with
+search_string with
 '''
 
 
 import sys
 
+def print_usage_and_exit():
+    print('Usage: {} pid search write'.format(sys.argv[0]))
+    sys.exit(1)
 
 if len(sys.argv) != 4:
     print_usage_and_exit()
