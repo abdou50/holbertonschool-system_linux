@@ -51,5 +51,6 @@ def init():
     mem_file.close()
     maps_file.close()
 
+
 if __name__ == '__main__':
     init()
