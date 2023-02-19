@@ -1,8 +1,8 @@
 #include "signals.h"
 /**
-* handler - set a handler
-* @signal: signal
-*/
+ * handler - set a handler
+ * @signal: signal
+ */
 void handler(int signal)
 {
 	printf("Gotcha! [%d]\n", signal);
@@ -10,12 +10,12 @@ void handler(int signal)
 }
 
 /**
-* handle_signal - set a handle
-* Return: 0 on success, -1 in failure
-*/
+ * handle_signal - set a handle
+ * Return: 0 on success, -1 in failure
+ */
 int handle_signal(void)
 {
-    if (signal(SIGINT, handler) == SIG_ERR)
-        return (-1);
-    return (0);
+	if (signal(SIGINT, handler) == SIG_ERR)
+		return (-1);
+	return (0);
 }
