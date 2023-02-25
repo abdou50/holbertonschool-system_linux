@@ -1,4 +1,4 @@
-t#include "signals.h"
+#include "signals.h"
 /**
  * current_handler_sigaction - recive the signel
  * Return: the current signal
