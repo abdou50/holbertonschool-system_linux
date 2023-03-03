@@ -11,9 +11,9 @@ void handler(int sig, siginfo_t *info, void *context)
 	(void)context;
 	psiginfo(info, "Caught");
 }
-/*
-* all_in_one - that sets up a single handler for all the signals
-*/
+/**
+ * all_in_one - that sets up a single handler for all the signals
+ */
 void all_in_one(void)
 {
 	struct sigaction sa;
