@@ -7,13 +7,12 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc != 2 || argv[1] == 0)
+	if (argc != 2)
 	{
 		printf("Usage: %s <pid>\n", argv[0]);
 		return (EXIT_FAILURE);
 	}
 	if (kill(atoi(argv[1]), SIGINT) == -1)
-		return (-1);
-	return (1);
-
+		return (EXIT_FAILURE);
+	return (EXIT_SUCCESS);
 }
