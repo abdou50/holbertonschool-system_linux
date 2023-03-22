@@ -11,10 +11,10 @@
  */
 int main(int __attribute__((unused)) argc, char **argv, char **env)
 {
-	char *command[] = {"./hnm", "-p", "", NULL};
+	char *command[] = {"./hobjdump", "-s", "-f", "", NULL};
 
-	command[2] = argv[1];
-	if (execve("/usr/bin/nm", command, env) == -1)
+	command[3] = argv[1];
+	if (execve("/usr/bin/hobjdump", command, env) == -1)
 	{
 		perror("execv");
 		return (0);
