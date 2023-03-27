@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include <stdlib.>
+#include <stdlib.h>
+#include <Python.h>
+
 /**
  * print_python_list - prints some basic info using macros
  * @p: a pointer to a PyObject representing a list
