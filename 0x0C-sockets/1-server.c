@@ -8,7 +8,7 @@
  * main - main
  * Return: 1 or 0
  */
-int main()
+int main(void)
 {
 	int sick, NEW;
 	struct sockaddr_in my_addr, their_addr;
