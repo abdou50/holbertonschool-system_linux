@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * main - main
  * Return: 1 or 0
